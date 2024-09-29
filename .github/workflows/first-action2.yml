@@ -1,6 +1,5 @@
 name: First workflow2
-on:
-  push
+on: push
 jobs:
   first-job2:
     runs-on: ubuntu-latest
@@ -8,3 +7,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run a one-line script
         run: echo Hello, world!
+
+
