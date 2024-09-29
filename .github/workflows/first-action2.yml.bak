@@ -4,7 +4,8 @@ jobs:
   first-job2:
     runs-on: ubuntu-latest
     steps:
-       uses: actions/checkout@v4
-       name: Run a one-line script
-       run: echo " The ${{ github }} repository has been cloned to the runner."
+      - name: github checkout
+        uses: actions/checkout@v4
+      - name: Run a one-line script
+        run: echo " The ${{ github }} repository has been cloned to the runner."
 
